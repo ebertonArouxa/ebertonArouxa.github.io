@@ -1,9 +1,19 @@
-// import { FaSquareGithub, FaLinkedinIn } from 'react-icons/fa6';
+// import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
+
+import SocialMedias from '../../components/SocialMedias';
+
 import TextCarousel from '../../components/Carousel';
 
 import styles from './styles.module.css';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleSeeMore = () => {
+    navigate('/portfolio');
+  };
+
   return (
     <>
       <div className={ styles.homeWrapper }>
@@ -17,22 +27,13 @@ function Home() {
             <span className={ styles.homeTitleSpecialCharacter }>:</span>
           </div>
           <p className={ styles.homeDescription }>
-            Desenvolvedor web front-end e designer gráfico.
-            Estou unindo minha paixão pelo design com minhas habilidades em programação,
-            ansioso por oportunidades que me permitam conceber
-            interfaces web surpreendentes e eficazes.
+            Desenvolvedor full stack com sólida expertise em design gráfico
+            e programação. Possuo profundo entendimento dos princípios de design,
+            usabilidade e estética, capacitando-me a abordar projetos de desenvolvimento
+            web com uma perspectiva crítica e artística.
           </p>
-          <h2>{'}'}</h2>
-          {/* <div className={ styles.homeSocialMediaButtons }>
-          <a href="https://github.com/ebertonArouxa">
-            <FaSquareGithub size={ 50 } className={ styles.github } />
-            <img src="public/icons8-github-36.png" alt="logo do github" />
-          </a>
-          <a href="https://www.linkedin.com/in/ebertonsouza/">
-            <FaLinkedinIn size={ 50 } className={ styles.linkedin } />
-            <img src="public/icons8-linkedin-36.png" alt="logo do linkedin" />
-          </a>
-        </div> */}
+          <h2>{'};'}</h2>
+          <SocialMedias />
         </section>
         <section className={ styles.homeImageWrapper }>
           <img src="public/eberton-arouxa-tinta.png" alt="foto de eberton arouxa" />
@@ -41,31 +42,33 @@ function Home() {
       <div className={ styles.contentWrapper }>
         <TextCarousel />
         <div className={ styles.aboutMeContent }>
-          <article>
-            <h2 id="sobreMim">
+          <article className={ styles.articleContentWrapper }>
+            <h2 id="sobreMim" className={ styles.aboutMeParagraphTitle }>
               Sobre mim:
             </h2>
-            <p>
-              aqui vai estar escrito as coisas sobre mim Lorem ipsum dolor sit amet.
-              Et aliquam ipsum est numquam nobis aut sint voluptas et provident minima
-              est velit voluptas est dignissimos unde eum esse recusandae. Sed quia
-              laboriosam eum doloribus nihil et laudantium animi aut adipisci vero ex
-              recusandae maiores eum quia galisum.
-
-              Ut neque fugiat in cupiditate voluptatibus 33 quasi omnis et quas nobis
-              eum esse nisi id officiis provident et atque nisi! Ea iste consequatur
-              At deleniti facilis ea sint veniam a porro enim!
-
-              Ut autem praesentium et tenetur assumenda sit culpa totam id molestiae
-              possimus in accusamus dolores rem perspiciatis quibusdam qui quam iure.
-              Aut velit perferendis ut assumenda perspiciatis qui laudantium aperiam
-              vel unde rerum in velit voluptates ab sunt dolorem aut assumenda velit?
+            <br />
+            <p className={ styles.aboutMeParagraph }>
+              Tenho 28 anos, sou natural de Alagoas, mas fui criado no Rio de Janeiro.
+              Gosto muito de ilustração e animação, sou apaixonado por tecnologia
+              e sou formado em Design Gráfico pela Universidade Unigranrio. Foi aí que
+              descobri a programação.
+            </p>
+            <br />
+            <p className={ styles.aboutMeParagraph }>
+              Atualmente, sou desenvolvedor full stack e estou sempre em busca de novos
+              desafios e conhecimentos.
+            </p>
+            <br />
+            <p className={ styles.aboutMeParagraph }>
+              Sou uma pessoa muito comunicativa, gosto de trabalhar em equipe e de
+              compartilhar conhecimento.
             </p>
           </article>
           <aside>
-            <h2>
-              Projetos
+            <h2 className={ styles.aboutMeParagraphTitle }>
+              Projetos:
             </h2>
+            <button type="button" onClick={ handleSeeMore }>Ver mais...</button>
           </aside>
         </div>
       </div>

@@ -19,9 +19,14 @@ function TextCarousel() {
     'Tailwind',
     'Styled components',
     'SQL',
+    'Prisma',
+    'Node.js',
+    'PostgreSQL',
+    'MySQL',
     'Docker',
     'Git',
     'GitHub',
+    'vue.js',
   ];
 
   const settings = {
@@ -30,7 +35,7 @@ function TextCarousel() {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1800,
     swipeToSlide: true,
   };
 

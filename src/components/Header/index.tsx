@@ -7,7 +7,7 @@ function Header() {
         <div>
           <span className={ styles.specialCharacter }>&lt;</span>
           <span className={ styles.headerTitle }>
-            {'Hello World '}
+            {'Eberton '}
           </span>
           <span className={ styles.specialCharacter }>/&gt;</span>
         </div>
