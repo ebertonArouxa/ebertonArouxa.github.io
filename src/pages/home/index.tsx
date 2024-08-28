@@ -6,6 +6,7 @@ import SocialMedias from '../../components/SocialMedias';
 import TextCarousel from '../../components/Carousel';
 
 import styles from './styles.module.css';
+import Projects from '../../components/Projects';
 
 function Home() {
   const navigate = useNavigate();
@@ -65,9 +66,33 @@ function Home() {
             </p>
           </article>
           <aside>
-            <h2 className={ styles.aboutMeParagraphTitle }>
+            <h2 className={ styles.projectTitle }>
               Projetos:
             </h2>
+            <Projects
+              href="https://github.com/ebertonArouxa/Menu-digital"
+              imageAlt="Foto do projeto meu menu digital"
+              imageSrc="public/meu-menu-digital.png"
+              projectText="Crie e gerencie seu restaurante com facilidade. Impulsione seu
+              negócio na plataforma de delivery ideal."
+              projectTitle="Meu-menu-digital"
+            />
+            <Projects
+              href="https://github.com/ebertonArouxa/online-store"
+              imageAlt="Foto do projeto online store"
+              imageSrc="public/online-store.png"
+              projectText="Integra-se à API do Mercado Livre,
+              permitindo aos usuários pesquisar produtos por categoria e palavra-chave"
+              projectTitle="Online-store"
+            />
+            <Projects
+              href="https://github.com/ebertonArouxa/receita-facil"
+              imageAlt="Foto do projeto receita facil"
+              imageSrc="public/receita-facil.jpg"
+              projectText="o Receita Fácil é uma ferramenta abrangente e prática para
+              entusiastas da culinária."
+              projectTitle="Receita-facil"
+            />
             <button type="button" onClick={ handleSeeMore }>Ver mais...</button>
           </aside>
         </div>

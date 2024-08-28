@@ -103,6 +103,12 @@
     font-size: 32px;
   }
 
+  .projectTitle {
+    color: rgb(117, 202, 231);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
   .aboutMeParagraph {
     color: rgb(191, 143, 190);
     font-size: 20px;
