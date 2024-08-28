@@ -1,0 +1,122 @@
+@media screen and (min-width: 1279px) {
+  
+  .homeWrapper {
+    background-color: rgb(40, 42, 54);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    height: 600px;
+    margin-top: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .homeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .homeSubtitleWrapper {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .homeSubtitle {
+    color: rgb(109, 183, 85);
+    font-style: italic;
+  }
+  
+  .homeTitleWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .homeTitle {
+    color: rgb(117, 202, 231);
+    padding-left: 30px;
+    font-size: 32px;
+    white-space: nowrap;
+  }
+  
+  .homeTitleSpecialCharacter {
+    color: rgb(237, 109, 133);
+    font-size: 32px;
+  }
+  
+  .homeDescription {
+    color: rgb(191, 143, 190);
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .homeImageWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  /* .homeButtonWapper {
+    align-items: center;
+    background-color: rgb(25, 26, 33);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 230px;
+    margin-top: 230px;
+    min-width: 160px;
+    width: 70%;
+  } */
+  
+  /* .aboutMeButton {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  } */
+
+  .contentWrapper {
+    background-color: rgb(40, 42, 54);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+  }
+
+  .aboutMeContent {
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .aboutMeParagraphTitle {
+    color: rgb(117, 202, 231);
+    font-size: 32px;
+  }
+
+  .projectTitle {
+    color: rgb(117, 202, 231);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .aboutMeParagraph {
+    color: rgb(191, 143, 190);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .articleContentWrapper {
+    border-right: 2px solid black;
+  }
+}

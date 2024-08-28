@@ -1,0 +1,17 @@
+.textCarouselContainer {
+  border-bottom: rgb(25, 26, 33) 10px solid;
+  border-left: rgb(25, 26, 33) 40px solid;
+  border-radius: 10px;
+  border-right: rgb(25, 26, 33) 40px solid;
+  border-top: rgb(25, 26, 33) 10px solid;
+  color: white;
+  margin: auto;
+  width: 70%;
+}
+
+.textSlide {
+  background: rgb(25, 26, 33);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
